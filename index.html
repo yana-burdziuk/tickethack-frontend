@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <div id="header">
+        <h1> <a id="homeButton" href="./index.html">Tickethack </a>
+        </h1>
+        <div> <a class="secondaryButton" id="cartButton" href="./cart.html"> Cart </a>
+            <a class="secondaryButton" id="bookingsButton" href="./bookings.html"> Bookings </a>
+        </div>
+    </div>
+    <div id="siteContainer">
+        <div id="siteDescription">
+            <h2> Explore the world effortlessly by train ! </h2>
+            <h3> Compare, book and enjoy cheap prices for train tickets : your journey starts on Tickethack </h3>
+        </div>
+        <div id="bookingContainer">
+            <div id="searchContainer">
+                <input class="input" type="text" id="departureInput" placeholder="Departure">
+                <br>
+                <input class="input" type="text" id="arrivalInput" placeholder="Arrival">
+                <br>
+                <input class="input" type="date" id="dateInput" placeholder="Date">
+                <br>
+                <button id="searchButton"> Search </button>
+            </div>
+            <div id="resultContainer">
+                <img id="resultsFound" src="./images/train.png">
+                <img id="resultsNotFound" src="./images/notfound.png">
+                <div id="line"></div>
+                <p id="resultText">It's time to book your future trip </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-</html>
 
 </html>

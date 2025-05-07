@@ -1,0 +1,119 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+#homeButton {
+    font-size: 25px;
+    color: #00a272f2;
+    text-decoration: none;
+}
+
+.secondaryButton {
+    color: #000000;
+    text-decoration: none;
+    margin: 0px 10px ;
+
+}
+#siteDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#siteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("./images/background.jpg");
+    color: white;
+}
+
+#bookingContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#searchContainer {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#resultContainer {
+    border-radius: 10px;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+#resultsFound {
+   display: flex;
+    width: 50%;
+}
+
+#resultsNotFound {
+    width: 40%;
+    display: none;
+}
+
+#resultText {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+#line {
+    height: 2px;
+    background-color: #009065;
+    width: 60%;
+    margin: 20px 0;
+}
+
+
+.input {
+    width: 250px;
+    height: 40px;
+    background-color: #9c9c9c2e;
+    border-radius: 6px;
+    border-style: hidden;
+    font-size: 15px;
+    color: #5353537d;
+}
+
+#dateInput {
+color: #000000;
+}
+
+#searchButton {
+    width: 250px;
+    height: 40px;
+    background-color: #9c9c9c2e;
+    border-radius: 6px;
+    border-style: hidden;
+    font-size: 15px;
+    background-color: #00a272f2;
+}
