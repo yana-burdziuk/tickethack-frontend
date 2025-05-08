@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cart.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <title>Cart</title>
 </head>
-
 <body>
-    <div id="header">
-        <h1> <a id="homeButton" href="./index.html">Tickethack </a>
-        </h1>
-        <div> <a class="secondaryButton" id="cartButton" href="./cart.html"> Cart </a>
-            <a class="secondaryButton" id="bookingsButton" href="./bookings.html"> Bookings </a>
-        </div>
+  <div id="header">
+    <a id="homeButton" href="./index.html">Tickethack</a>
+    <div>
+      <a class="secondaryButton" href="./cart.html">Cart</a>
+      <a class="secondaryButton" href="./bookings.html">Bookings</a>
     </div>
-    <div id="siteContainer">
-        <div id="ticketsMessageContainer">
-            <h1 class="cardDescription"> No tickets in your cart. </h1>
-            <br>
-            <h1 class="cardDescription">Why not plan a trip ?</h1>
-        </div>
-    </div>
-    <script src="script-cart.js"></script>
-</body>
+  </div>
 
+  <div id="siteContainer">
+    <div id="cartContainer">
+      <div id="cartItems"></div>
+      <div id="cartFooter" class="hidden">
+        <span id="totalPrice">Total : 0€</span>
+        <button id="purchaseButton">Purchase</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script-cart.js"></script>
+</body>
 </html>

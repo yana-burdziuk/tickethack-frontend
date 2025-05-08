@@ -1,102 +1,107 @@
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: #f2f4f4;
 }
 
-.cardDescription {
-    display: flex;
-    font-size: 15px;
-    font-weight: 400; 
-    color: #000000;
-}
-
-h1 {
-    font-size: 15px;
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px;
 }
 
 #homeButton {
-    font-size: 25px;
-    color: #00a272f2;
-    text-decoration: none;
+  font-size: 25px;
+  color: #00a272f2;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .secondaryButton {
-    color: #000000;
-    text-decoration: none;
-    margin: 0px 10px;
-
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
 #siteContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #f2f4f4;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f4f4;
 }
 
-
 #bookingsMessageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    height: 20vh;
-    background-color: white;
-    border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cardDescription {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin: 10px 0;
 }
 
 #bookedTrips {
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 900px;
-    height: auto;
-    background-color: white;
-    border-radius: 7px;
-    overflow-y: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 900px;
+  height: auto;
+  background-color: white;
+  border-radius: 7px;
+  overflow-y: auto;
 }
+
 #myBookings {
-    display: none;
-    font-size: 18px;
-    font-weight: 500; 
+  display: none;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .trip {
-    display: none;
-    justify-content: space-around;
-    width: 98%;
-    margin: 20px;
-    border-radius: 7px;
-    background-color: #710a0a17;
+  display: none;
+  justify-content: space-around;
+  width: 98%;
+  margin: 20px;
+  border-radius: 7px;
+  background-color: #710a0a17;
 }
 
 #line {
-    display: none;
-    height: 2px;
-    background-color: #000000;
-    width: 30%;
-    margin: 20px 0;
+  display: none;
+  height: 2px;
+  background-color: #000000;
+  width: 30%;
+  margin: 20px 0;
 }
 
 #finalMessage {
-    display : none;
-    font-size: 15px;
-    font-weight: 400; 
-    color: #009065;
+  display: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #009065;
 }
-#timeLeft, #destination {
-    display: none;
-    width: 100px;
 
+#timeLeft,
+#destination {
+  display: none;
+  width: 100px;
 }

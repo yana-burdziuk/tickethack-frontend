@@ -2,55 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bookings.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./bookings.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
-    <div id="header">
-        <h1> <a id="homeButton" href="./index.html">Tickethack </a>
-        </h1>
-        <div> <a class="secondaryButton" id="cartButton" href="./cart.html"> Cart </a>
-            <a class="secondaryButton" id="bookingsButton" href="./bookings.html"> Bookings </a>
-        </div>
+  <div id="header">
+    <h1><a id="homeButton" href="./index.html">Tickethack</a></h1>
+    <div>
+      <a class="secondaryButton" id="cartButton" href="./cart.html">Cart</a>
+      <a class="secondaryButton" id="bookingsButton" href="./bookings.html">Bookings</a>
     </div>
-    <div id="siteContainer">
-        <div id="bookingsMessageContainer">
-            <h1 class="cardDescription"> No booking yet. </h1>
-            <br>
-            <h1 class="cardDescription">Why not plan a trip ?</h1>
-        </div>
-        <div id="bookedTrips">
-            <h3 id="myBookings">
-                My bookings
-            </h3>
-        
-            <div class="trip">
-                <p id="destination">Paris > Lyon </p>
-                <p id="tripTime">13:50</p>
-                <p id="tripPrice">100€</p>
-                <p id="timeLeft"> Departure in 30 minutes</p>
-            </div>
+  </div>
 
-            <div class="trip">
-                <p id="destination">Marseille > Lyon </p>
-                <p id="tripTime">13:50</p>
-                <p id="tripPrice">100€</p>
-                <p id="timeLeft"> Departure in 5 hours</p>
-            </div>
-
-            <div id="line"></div>
-
-            <h3 id="finalMessage"> Enjoy your travels with Tickethack !</h3>
-        </div>
+  <div id="siteContainer">
+    <!-- Message par défaut s'il n'y a aucune réservation -->
+    <div id="bookingsMessageContainer">
+      <h1 class="cardDescription">No booking yet.</h1>
+      <br />
+      <h1 class="cardDescription">Why not plan a trip?</h1>
     </div>
-    <script src="script-bookings.js"></script>
+
+    <!-- Zone des réservations -->
+    <div id="bookingsList">
+      <h3 id="myBookings">My bookings</h3>
+      <!-- les cartes seront injectées ici dynamiquement -->
+    </div>
+
+    <!-- Ligne et message final -->
+    <div id="finalMessageContainer">
+      <div id="line"></div>
+      <h3 id="finalMessage">Enjoy your travels with Tickethack!</h3>
+    </div>
+  </div>
+
+  <script src="script-bookings.js"></script>
 </body>
 
 </html>

@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Tickethack</title>
 </head>
-
 <body>
-    <div id="header">
-        <h1> <a id="homeButton" href="./index.html">Tickethack </a>
-        </h1>
-        <div> <a class="secondaryButton" id="cartButton" href="./cart.html"> Cart </a>
-            <a class="secondaryButton" id="bookingsButton" href="./bookings.html"> Bookings </a>
-        </div>
+  <div id="header">
+    <h1><a id="homeButton" href="./index.html">Tickethack</a></h1>
+    <div>
+      <a class="secondaryButton" href="./cart.html">Cart</a>
+      <a class="secondaryButton" href="./bookings.html">Bookings</a>
     </div>
-    <div id="siteContainer">
-        <div id="siteDescription">
-            <h2> Explore the world effortlessly by train ! </h2>
-            <h3> Compare, book and enjoy cheap prices for train tickets : your journey starts on Tickethack </h3>
-        </div>
-        <div id="bookingContainer">
-            <div id="searchContainer">
-                <input class="input" type="text" id="departureInput" placeholder="Departure">
-                <br>
-                <input class="input" type="text" id="arrivalInput" placeholder="Arrival">
-                <br>
-                <input class="input" type="date" id="dateInput" placeholder="Date">
-                <br>
-                <button id="searchButton"> Search </button>
-            </div>
-            <div id="resultContainer">
-                <img id="resultsFound" src="./images/train.png">
-                <img id="resultsNotFound" src="./images/notfound.png">
-                <div id="line"></div>
-                <p id="resultText">It's time to book your future trip </p>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  </div>
 
+  <div id="siteContainer">
+    <div id="siteDescription">
+      <h2>Explore the world effortlessly by train !</h2>
+      <br /><br />
+      <p>Compare, book and enjoy cheap prices for train tickets : your journey starts on Tickethack</p>
+    </div>
+
+    <div id="bookingContainer">
+      <div id="searchContainer">
+        <input id="departureInput" class="input" type="text" placeholder="Departure" />
+        <input id="arrivalInput" class="input" type="text" placeholder="Arrival" />
+        <input id="dateInput" class="input" type="date" />
+        <button id="searchButton">Search</button>
+      </div>
+
+      <div id="resultContainer">
+        <!-- Default display (visible initially) -->
+        <div id="defaultDisplay">
+          <img src="./images/train.png" alt="train" id="defaultImage" />
+          <div id="defaultLine"></div>
+          <div id="defaultText">It's time to book your future trip</div>
+        </div>
+
+        <!-- Displayed if results found -->
+        <div id="resultsFound" style="display: none;">
+          <div id="tripsList"></div>
+        </div>
+
+        <!-- Displayed if no results -->
+        <div id="resultsNotFound" style="display: none;">
+          <img src="./images/notfound.png" alt="No trip found" id="notFoundImage" />
+          <p id="resultText">No trip found.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>
