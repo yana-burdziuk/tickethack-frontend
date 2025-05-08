@@ -19,14 +19,14 @@ body {
     background-color: white;
     padding: 10px 40px;
 }
-
+  
 #homeButton {
     font-size: 25px;
     color: #00a272f2;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
-
+  
 .secondaryButton {
     color: #000000;
     text-decoration: none;
