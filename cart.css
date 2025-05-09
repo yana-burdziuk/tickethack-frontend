@@ -5,30 +5,8 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: #f2f4f4;
-}
-
-#header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 10px 40px;
-}
-
-#homeButton {
-  font-size: 25px;
-  color: #00a272f2;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.secondaryButton {
-  color: #000000;
-  text-decoration: none;
-  margin-left: 20px;
 }
 
 #siteContainer {
@@ -51,11 +29,19 @@ body {
   align-items: center;
 }
 
+#cartItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .cardDescription {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .cardDescription:first-child {
@@ -64,15 +50,17 @@ body {
 
 .ticketItem {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf5f5;
   border-radius: 10px;
-  padding: 12px 20px;
+  padding: 16px 24px;
   margin-bottom: 12px;
   font-weight: 500;
   font-size: 16px;
   width: 100%;
+  gap: 20px;
 }
 
 .deleteButton {

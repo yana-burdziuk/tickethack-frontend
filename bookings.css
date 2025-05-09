@@ -5,30 +5,8 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: #f2f4f4;
-}
-
-#header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 10px 40px;
-}
-
-#homeButton {
-  font-size: 25px;
-  color: #00a272f2;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.secondaryButton {
-  color: #000000;
-  text-decoration: none;
-  margin-left: 20px;
 }
 
 #siteContainer {
@@ -45,10 +23,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 150px;
-  background-color: white;
   border-radius: 10px;
+  padding: 40px 60px;
+  width: 600px;
+  background-color: white;
 }
 
 .cardDescription {

@@ -1,18 +1,18 @@
-let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
-const cartItemsContainer = document.getElementById('cartItems');
-const totalPriceSpan = document.getElementById('totalPrice');
-const cartFooter = document.getElementById('cartFooter');
+const cartItemsContainer = document.getElementById("cartItems");
+const totalPriceSpan = document.getElementById("totalPrice");
+const cartFooter = document.getElementById("cartFooter");
 
 function renderCart() {
-  cartItemsContainer.innerHTML = '';
+  cartItemsContainer.innerHTML = "";
 
   if (cartItems.length === 0) {
     cartItemsContainer.innerHTML = `
       <p class="cardDescription">No tickets in your cart.</p>
       <p class="cardDescription">Why not plan a trip?</p>
     `;
-    cartFooter.classList.add('hidden');
+    cartFooter.classList.add("hidden");
     return;
   }
 
@@ -21,8 +21,8 @@ function renderCart() {
   cartItems.forEach((item, index) => {
     total += item.price;
 
-    const itemDiv = document.createElement('div');
-    itemDiv.className = 'ticketItem';
+    const itemDiv = document.createElement("div");
+    itemDiv.className = "ticketItem";
     itemDiv.innerHTML = `
       <span>${item.departure} > ${item.arrival}</span>
       <span>${item.time}</span>
@@ -33,13 +33,13 @@ function renderCart() {
   });
 
   totalPriceSpan.textContent = `Total : ${total}€`;
-  cartFooter.classList.remove('hidden');
+  cartFooter.classList.remove("hidden");
 
-  document.querySelectorAll('.deleteButton').forEach(button => {
-    button.addEventListener('click', (e) => {
+  document.querySelectorAll(".deleteButton").forEach((button) => {
+    button.addEventListener("click", (e) => {
       const index = e.target.dataset.index;
       cartItems.splice(index, 1);
-      localStorage.setItem('cart', JSON.stringify(cartItems));
+      localStorage.setItem("cart", JSON.stringify(cartItems));
       renderCart();
     });
   });
